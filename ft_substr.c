@@ -6,7 +6,7 @@
 /*   By: ael-maaz <ael-maaz@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/10 10:58:09 by ael-maaz          #+#    #+#             */
-/*   Updated: 2023/12/30 21:56:41 by ael-maaz         ###   ########.fr       */
+/*   Updated: 2024/01/06 18:14:27 by ael-maaz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,8 +32,4 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	ft_memcpy(&p[0], &s[i], len);
 	p[len] = 0;
 	return (p);
-}
-int main()
-{
-	printf("%s",ft_substr("bunda",0,1));
 }

@@ -6,7 +6,7 @@
 /*   By: ael-maaz <ael-maaz@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/10 13:27:34 by ael-maaz          #+#    #+#             */
-/*   Updated: 2023/12/15 13:36:24 by ael-maaz         ###   ########.fr       */
+/*   Updated: 2024/01/06 18:14:25 by ael-maaz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 	size_t	size;
 	size_t	j;
 
+	if (!s1 || !set)
+		return (NULL);
 	if (ft_strlen(s1) == 0)
 		return (ft_strdup(""));
 	else
@@ -38,7 +40,3 @@ char	*ft_strtrim(char const *s1, char const *set)
 	ft_strlcpy(p, &s1[i], size + 1);
 	return (p);
 }
-/* int main()
-{
-	printf("%s",ft_strtrim("abcdba", "acb"));
-} */

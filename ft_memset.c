@@ -6,12 +6,11 @@
 /*   By: ael-maaz <ael-maaz@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/04 22:37:16 by ael-maaz          #+#    #+#             */
-/*   Updated: 2023/12/07 21:24:29 by ael-maaz         ###   ########.fr       */
+/*   Updated: 2024/01/06 18:13:06 by ael-maaz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 void	*ft_memset(void *b, int c, size_t len)
 {
@@ -24,16 +23,3 @@ void	*ft_memset(void *b, int c, size_t len)
 	}
 	return (b);
 }
-
-/* int main() {
-
-    int a = 2018;
-	int *p = &a;
-	int b = 2018;
-	memset(p,0,2);
-	memset(p,57,1);
-    ft_memset(&b,0,2);
-    ft_memset(&b,57,1);
-    printf("%d %d",a,b);
-    return 0;
-} */

@@ -6,7 +6,7 @@
 /*   By: ael-maaz <ael-maaz@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/05 18:37:11 by ael-maaz          #+#    #+#             */
-/*   Updated: 2023/12/10 11:16:42 by ael-maaz         ###   ########.fr       */
+/*   Updated: 2024/01/06 18:13:01 by ael-maaz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,11 +26,3 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	}
 	return (dst);
 }
-
-/* int main(void)
-{
-	char tab[10]="hello";
-	char leau[10]= "bunda";
-	char bunda[10];
-	printf("%s " , ft_memcpy(bunda, leau,19) ,memcpy(bunda,leau,11));
-} */

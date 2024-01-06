@@ -6,7 +6,7 @@
 /*   By: ael-maaz <ael-maaz@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/08 12:29:34 by ael-maaz          #+#    #+#             */
-/*   Updated: 2023/12/08 14:18:22 by ael-maaz         ###   ########.fr       */
+/*   Updated: 2024/01/06 18:12:54 by ael-maaz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,11 +25,3 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (0);
 }
-
-/* int main()
-{
-
-	printf("%s\n", ft_memchr("bonjourno", 'n', 2));
-	printf("%s\n", memchr("bonjourno", 'n', 2));
-
-} */

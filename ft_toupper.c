@@ -6,7 +6,7 @@
 /*   By: ael-maaz <ael-maaz@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/04 22:08:54 by ael-maaz          #+#    #+#             */
-/*   Updated: 2023/12/20 11:10:38 by ael-maaz         ###   ########.fr       */
+/*   Updated: 2024/01/06 18:14:32 by ael-maaz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,3 @@ int	ft_toupper(int c)
 	else
 		return (c);
 }
-/* int main()
-{
-	int i = open("text2.txt", O_CREAT | O_RDWR);
-	ft_putstr_fd("HELLO MFERSSSSS", i);
-	printf("%d", i);
-} */

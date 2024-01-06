@@ -6,7 +6,7 @@
 /*   By: ael-maaz <ael-maaz@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/04 21:27:17 by ael-maaz          #+#    #+#             */
-/*   Updated: 2023/12/30 21:00:35 by ael-maaz         ###   ########.fr       */
+/*   Updated: 2024/01/01 21:20:38 by ael-maaz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,6 @@
 
 # include <unistd.h>
 # include <stdlib.h>
-# include <string.h>
-# include <stdio.h>
 
 typedef struct s_list
 {

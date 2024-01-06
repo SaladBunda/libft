@@ -6,7 +6,7 @@
 /*   By: ael-maaz <ael-maaz@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/08 14:23:22 by ael-maaz          #+#    #+#             */
-/*   Updated: 2023/12/08 15:20:45 by ael-maaz         ###   ########.fr       */
+/*   Updated: 2024/01/06 18:12:58 by ael-maaz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,12 +29,3 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	}
 	return (str1[i] - str2[i]);
 }
-
-/* int main()
-{
-	char *s1 = "\xff\xaa\xde\xffMACOSX\xff";
-    char *s2 = "\xff\xaa\xde\x02";
-    size_t size = 8;
-	printf("%d\n", ft_memcmp(s1,s2,size));
-	printf("%d", memcmp(s1,s2,size));
-} */

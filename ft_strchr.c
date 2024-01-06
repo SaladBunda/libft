@@ -6,7 +6,7 @@
 /*   By: ael-maaz <ael-maaz@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/06 21:44:37 by ael-maaz          #+#    #+#             */
-/*   Updated: 2023/12/06 22:37:33 by ael-maaz         ###   ########.fr       */
+/*   Updated: 2024/01/06 18:13:21 by ael-maaz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,12 +27,3 @@ char	*ft_strchr(const char *s, int c)
 		return ((char *)s + i);
 	return (0);
 }
-
-/* int main()
-{
-	char c = 't' +256;
-	char *bud = "hello mfs";
-	printf("%s\n", ft_strchr("tripouille",'t'+256));
-	printf("%s\n", strchr("tripouille",'t'+256));
-	printf("%d %c",c,c);
-} */

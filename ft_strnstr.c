@@ -6,7 +6,7 @@
 /*   By: ael-maaz <ael-maaz@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/08 15:22:51 by ael-maaz          #+#    #+#             */
-/*   Updated: 2023/12/09 21:03:50 by ael-maaz         ###   ########.fr       */
+/*   Updated: 2024/01/06 18:14:18 by ael-maaz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,8 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 
 	i = 0;
 	count = ft_strlen(needle);
+	if (!haystack && len == 0 && needle)
+		return (NULL);
 	if (needle[0] == '\0')
 		return ((char *)haystack);
 	while (haystack[i] && i < len)
@@ -36,10 +38,3 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	}
 	return (NULL);
 }
-/* int main()
-{
-	char haystack[30] = "aaabcabcd";
-	char needle[10] = "aabc";
-	printf("%s\n",ft_strnstr(haystack, needle, -1));
-	printf("%s",strnstr(haystack, needle, -1));
-} */

@@ -6,13 +6,13 @@
 /*   By: ael-maaz <ael-maaz@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/11 14:49:24 by ael-maaz          #+#    #+#             */
-/*   Updated: 2023/12/16 11:40:02 by ael-maaz         ###   ########.fr       */
+/*   Updated: 2024/01/06 18:12:22 by ael-maaz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	ft_count(long n)
+static int	ncount(long n)
 {
 	int	i;
 
@@ -28,7 +28,7 @@ static int	ft_count(long n)
 	return (i);
 }
 
-static char	*ft_allocate(int *n, long *i)
+static char	*allocate(int *n, long *i)
 {
 	char	*str;
 
@@ -53,8 +53,8 @@ char	*ft_itoa(int n)
 	cpy = n;
 	if (n < 0)
 		cpy = (long)n * (-1);
-	i = ft_count(cpy);
-	str = ft_allocate(&n, &i);
+	i = ncount(cpy);
+	str = allocate(&n, &i);
 	if (!str)
 		return (NULL);
 	if (n < 0)
@@ -69,9 +69,3 @@ char	*ft_itoa(int n)
 	}
 	return (str);
 }
-
-/* int main()
-{
-	int a = 1337;
-	printf("%s",ft_itoa(a));
-} */

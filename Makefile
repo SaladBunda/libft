@@ -17,13 +17,14 @@ CFLAGS = -Wall -Wextra -Werror -I.
 all: $(NAME)
 
 $(NAME): $(OBJS)
-	ar rcs $(NAME) $(OBJS)
+	ar -rc $(NAME) $(OBJS)
 
 %.o : %.c libft.h
 	$(CC) -c $(CFLAGS) $<
 
+
 bonus: $(OBJB)
-	ar rcs $(NAME) $(OBJB)
+	ar -rc $(NAME) $(OBJB)
 	
 clean:
 	rm -f $(OBJS) $(OBJB)
